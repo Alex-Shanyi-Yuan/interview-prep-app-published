@@ -1,9 +1,6 @@
 import React from 'react'
 import {
-  Form,
   FormControl,
-  FormDescription,
-  FormField,
   FormItem,
   FormLabel,
   FormMessage,
@@ -19,7 +16,7 @@ interface FormFieldProps<T extends FieldValues> {
   type?: 'text' | 'email' | 'password' | 'file'
 }
 
-const FormFiled = ({ control, name, label, placeholder, type='text'}: FormFieldProps<T>) => (
+const FormField = ({ control, name, label, placeholder, type='text'}: FormFieldProps<T>) => (
   <Controller name={name} control={control} render={({ field }) => (
 
     <FormItem>
@@ -33,4 +30,4 @@ const FormFiled = ({ control, name, label, placeholder, type='text'}: FormFieldP
   />
 )
 
-export default FormFiled
+export default FormField

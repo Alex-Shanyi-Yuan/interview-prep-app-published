@@ -20,7 +20,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import React from 'react'
 import { toast } from 'sonner'
-import FormFiled from './FormFiled'
+import FormFiled from './FormField'
 import { useRouter } from 'next/navigation'
 
 const authFormSchema = (type: FormType) => {
