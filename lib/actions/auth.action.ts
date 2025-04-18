@@ -102,7 +102,7 @@ export async function getCurrentUser(): Promise<User | null> {
     } as User
 
   } catch (err) {
-    console.log(err)
+    console.error(err)
     return null
   }
 }
